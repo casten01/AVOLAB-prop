@@ -10,7 +10,7 @@
 
 body{
     height: 100vh;
-    font-family: Consolas;
+    font-family: 'Consolas', 'Inconsolata';
     color: black;
 }
 a{
@@ -33,6 +33,10 @@ nav{
     position: absolute;
     left: 0;
     margin-left: 15px;
+}
+
+.name a{
+    color: black;
 }
 .navbar{
     position: absolute;
@@ -134,7 +138,6 @@ li{
 }
 
 .go-roadmap {
-
     margin-top: 25px;
 }
 
@@ -145,22 +148,13 @@ li{
 }
 
 .wallpaper img{
-    height: 900px;
+    height: 850px;
     width: 100%;
 }
 
 .blocco{
     position: relative;
     height: 100%;
-}
-
-.bn{
-        filter: gray;
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -ms-filter: grayscale(100%); 
-        -o-filter: grayscale(100%);
-
 }
 
 .title-roadmap {
@@ -324,6 +318,10 @@ li{
     margin-top: 25px;;
 }
 
+.mt2{
+    margin-top: 50px;;
+}
+
 .row-next{
     height: 150px;
 }
@@ -342,3 +340,195 @@ li{
     right: 10%;
 }
 
+.info-sub{
+    position: relative;
+    text-align: center;
+    /* margin-top: 250px; */
+    width: 35%;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);   
+}
+
+.info-sub2{
+    position: relative;
+    text-align: center;
+    /* margin-top: 250px; */
+    width: 50%;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);   
+}
+
+.info-sub p {
+    margin-top: 15px;
+}
+
+.list-card-mb{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    top: 30%;
+    height: 450px;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.card-memb{
+    height: 450px;
+    border: 1px solid black;
+    width: 20%;
+    position: relative;
+    box-shadow: 10px 10px 1px 2px grey;
+}
+
+.list-card-mb .square1{
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    right: 20px;
+    top: 5px;
+    border-right: 2px solid black;
+}
+
+.list-card-mb .square2{
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    right: 5px;
+    top: 20px;
+    border-top: 2px solid black;
+}
+
+.list-card-mb .square{
+    position: absolute;
+    height: 225px;
+    width: 225px;
+    background-color: grey;
+    margin-top: calc((100% - 225px) / 2);
+    margin-left: calc((100% - 225px) / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-card-mb .text-mb {
+    margin-top: calc(240px + (100% - 225px) / 2);
+}
+
+.stars{
+    text-align: center;
+    font-size: 18px;
+}
+
+.memb-title{
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.page-ini{
+    height: 100vh;
+    width: 100%;
+}
+
+.list-card-3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    height: 300px;
+    width: 100%;
+    margin-top: 25px;
+    /* border: 1px solid black; */
+}
+
+.list-card-3 .square_flx{
+    height: 150px;
+    width: 150px;
+    background-color: grey;
+}
+
+.info-sub2 h4{
+    margin-bottom: 15px;
+}
+
+.blocco-tm{
+    height: 100vh;
+    width: 100%;
+}
+
+.line-behind{
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    border-bottom: 1px solid grey;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.member-team{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightgrey;
+    border: 1px solid black;
+}
+
+.name2{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.desc-memb{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.button-meet{
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.list-members{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.team-memb{
+    height: calc( 100% / 3 );
+    width: calc( 100% / 3 );
+}
+
+.circle-memb{
+    height: 150px;
+    width: 150px;
+    background: lightgrey;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.name-memb{
+    text-align: center;
+    margin-top: 15px;
+}
