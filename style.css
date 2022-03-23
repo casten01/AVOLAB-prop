@@ -24,6 +24,7 @@ nav{
     position: absolute;
     top: 0;
     width: 100%;
+    z-index: 500;
     }
 
 .name, .navbar, .wallet {
@@ -144,6 +145,11 @@ li{
 .link{
     font-size: 24px;
     font-weight: 600;
+    color: black;
+}
+
+.link2{
+
     color: black;
 }
 
@@ -511,7 +517,7 @@ li{
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-
+    margin-top: 25px;
 }
 
 .team-memb{
@@ -531,4 +537,57 @@ li{
 .name-memb{
     text-align: center;
     margin-top: 15px;
+}
+
+.first-avotars{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.title-avotars{
+    position: absolute;
+    height: 50px;
+    width: 50%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.par-avotars{
+    text-align: center;
+    position: absolute;
+    height: 200px;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+
+.w3-container{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gg{
+    height: 250px;
+    width: 250px;
+    background-color: grey;
+
 }

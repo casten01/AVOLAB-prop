@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avotars</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    
+    <style>
+            *{font-family: 'Consolas', 'Inconsolata';}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="name"> <a href="index.html">[avolab.com]</a></div>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="roadmap.html" class="small-text">roadmap</a>
+                </li>
+                <li>
+                    <a href="index.html" class="small-text"> homepage </a>
+                </li>
+                <li>
+                    <a href="team.html" class="small-text">team</a>
+                </li>
+                <li>
+                    <a href="avotars.html" class="normal-text">>avotars<</a>
+                </li>
+            </ul>
+        </div>
+        <div class="wallet">connect my wallet</div>
+    </nav>   
+
+    <div class="first-avotars">
+        <div class="title-avotars normal-text">
+            <h1>[Avotars]</h1>
+        </div>
+        <div class="par-avotars small-text">
+            <p>AVOTARS is a collection of 10.000 uniquely generated characters living on the Etherum blockchain. Fashion, entertainment, decentralized finance and gaming come together to give life to AVOVERSE, an ecosystem capable of offering real life experiences mixed with virtual collectibles. </p>
+        </div>
+
+        <div class="w3-container">                   
+            <div class="w3-content w3-display-container" style="max-width:800px; display: flex;">
+            <img class="mySlides gg" src="img_nature.jpg">
+            <img class="mySlides gg" src="img_fjords.jpg">
+            <img class="mySlides gg" src="img_mountains.jpg">
+          
+
+            <div class="w3-center w3-section w3-large w3-text-white w3-display-bottomleft black" style="width:100%;">
+              <div class="w3-left w3-padding-left w3-hover-text-khaki black" style="font-size: 15px;" onclick="plusDivs(-1)">&#10094; </div>
+              <div class="w3-right w3-padding-right w3-hover-text-khaki black" style="font-size: 15px;" onclick="plusDivs(1)">&#10095;</div>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white black" style="font-size: 15px;"  onclick="currentDiv(1)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white black" style="font-size: 15px;"  onclick="currentDiv(2)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white black" style="font-size: 15px;"  onclick="currentDiv(3)"></span>
+            </div>
+          </div>
+          
+          <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function currentDiv(n) {
+            showDivs(slideIndex = n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+               dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " w3-white";
+          }
+          </script>
+          
+
+        </div>
+    </div>
+</body>
+</html>
